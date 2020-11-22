@@ -172,40 +172,13 @@ span i {
 
 
 
-.row .col-md-3 .small1 {
-  float: right;
-  font-size: 11px;
-  display: -webkit-box;
-  margin-right: 56px;
-}
-
-.row .col-md-3 .small2 {
-  float: right;
-  font-size: 11px;
-  display: -webkit-box;
-  margin-right: 75px;
-}
-
-.row .col-md-3 .small3 {
-  float: right;
-  font-size: 11px;
-  display: -webkit-box;
-  margin-right: 56px;
-}
-
-.row .col-md-3 .small4 {
-  float: right;
-  font-size: 11px;
-  display: -webkit-box;
-  margin-right: 25px;
-}
-
 
 .next-header .col-md-3 a:hover{
 color: #333;
+
 }
 .next-header .col-md-3 i{
-  margin-right: 6px;
+  margin-right: 14px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -219,7 +192,7 @@ color: #333;
   .user_li {
     position: fixed;
     top: 18px;
-    right: 24px;
+    right: 130px;
   }
 
   .next-header {
@@ -273,13 +246,19 @@ color: #333;
   .user_li {
     position: fixed;
     top: 10px;
-    right: 24px;
+    right: 130px;
+  }
+  .login_icon{
+    position: fixed;
+  top: 9px;
+  right: 20px;
   }
   .user_li i{
     font-size: 20px;
   }
 
   h6{
+    color: #fff;
     font-size: 15px !important;
   }
   /* .user_li  .nav-link{ */
@@ -338,6 +317,17 @@ font-size: 16px;
 .user_li .far{
   font-size: 16px;
 }
+.login_icon{
+  color: #fff;
+  margin-top: 9px;
+  font-family: sans-serif;
+
+}
+.login_icon:hover{
+  color: #333;
+}
+
+
 a:hover {
   text-decoration: none;
 }
