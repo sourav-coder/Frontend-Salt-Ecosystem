@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <!-- boostrap cdn  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="form_box">
+
+            <div class="button_box">
+                <button href="#" id="register" onclick="change()" class="btn btn-primary">Register</button>
+                <button href="#" id="login" onclick="change()" class="btn ">Login</button>
+            </div>
+
+            <div class="icon_img">
+                <img src="images/unnamed.png" alt="">
+                <p>Salt Ecosystem</p>
+
+            </div>
+
+
+            <div class="icons">
+                <a href="#" class="btn btn-primary">
+                    Continue with 
+                    <i class="fab fa-google"></i>
+
+                </a>
+
+                <a href="#" class="btn btn-outline-primary">
+                    Continue with 
+                    <i class="fab fa-facebook f"></i>
+                </a>               
+            </div>
+            <span>You are agreed with our <a href="#">Terms & Conditions </a>and <a href="#">Privacy Policies</a></span>
+
+            
+        
+            
+        </div>
+    </header>
+
+    <script>
+        var x=document.getElementById('login')
+        var y=document.getElementById('register')
+        function change(){
+            console.log("clicked");
+            if (y.className==="btn btn-primary"){
+                x.className="btn btn-primary";
+                y.className="btn"
+                console.log(1);
+            }
+            else{
+                y.className="btn btn-primary";
+                x.className="btn";
+            }
+        }
+
+
+       
+       
+       
+       
+       
+       
+       
+       
+    </script>
+
+</body>
+
+</html>
