@@ -133,8 +133,6 @@ span i {
   display: inline;
 }
 
-
-
 .row .col-md-3 .m-pro1 {
   background-size: 40px;
   padding-left: 48px !important;
@@ -143,7 +141,6 @@ span i {
   padding-top: 4px !important;
 }
 
-
 .row .col-md-3 .m-pro2 {
   background-size: 53px;
   padding-left: 48px !important;
@@ -151,8 +148,6 @@ span i {
   font-size: 22px;
   padding-top: 8px !important;
 }
-
-
 
 .row .col-md-3 .m-pro3 {
   background-size: 53px;
@@ -170,14 +165,10 @@ span i {
   padding-top: 4px !important;
 }
 
-
-
-
-.next-header .col-md-3 a:hover{
-color: #333;
-
+.next-header .col-md-3 a:hover {
+  color: #333;
 }
-.next-header .col-md-3 i{
+.next-header .col-md-3 i {
   margin-right: 14px;
 }
 
@@ -191,8 +182,8 @@ color: #333;
 
   .user_li {
     position: fixed;
-    top: 18px;
-    right: 130px;
+    top: 42px;
+    right: 136px;
   }
 
   .next-header {
@@ -200,15 +191,21 @@ color: #333;
   }
 
   .form-inline .form-control {
-    width: 530px;
+    width: 494px;
   }
   .nav {
     display: block;
   }
+
+  .login_icon {
+    position: fixed;
+    top: 38px;
+    right: 27px;
+  }
 }
 
 /* 
- ------------- media query ----------
+ ------------- media query for mobile ----------
 */
 
 @media only screen and (max-width: 650px) {
@@ -248,21 +245,21 @@ color: #333;
     top: 10px;
     right: 130px;
   }
-  .login_icon{
+  .login_icon {
     position: fixed;
-  top: 9px;
-  right: 20px;
+    top: 9px;
+    right: 20px;
   }
-  .user_li i{
+  .user_li i {
     font-size: 20px;
   }
 
-  h6{
+  h6 {
     color: #fff;
     font-size: 15px !important;
   }
   /* .user_li  .nav-link{ */
-    /* font-size: 1px; */
+  /* font-size: 1px; */
   /* } */
 
   .btn img {
@@ -274,11 +271,10 @@ color: #333;
     height: 34px;
     width: 42px;
   }
- 
- .user_li .far{
-font-size: 16px;
- }
- 
+
+  .user_li .far {
+    font-size: 16px;
+  }
 }
 /* 
 ------ mobile navbar --------
@@ -313,20 +309,18 @@ font-size: 16px;
   font-size: 18px;
   padding: 3px;
 }
- 
-.user_li .far{
+
+.user_li .far {
   font-size: 16px;
 }
-.login_icon{
+.login_icon {
   color: #fff;
   margin-top: 9px;
   font-family: sans-serif;
-
 }
-.login_icon:hover{
+.login_icon:hover {
   color: #333;
 }
-
 
 a:hover {
   text-decoration: none;
@@ -442,7 +436,23 @@ a:hover {
   .footer {
     display: none;
   }
-  
-  
-  
+}
+
+/* 
+--- media query for ipadpro
+*/
+
+@media (min-width: 768px) and (max-width: 1366px) {
+  .form-inline .form-control {
+    width: 471px;
+  }
+}
+
+/* 
+ ------------------- media query for iphone5
+*/
+@media (min-width: 320px) and (max-width: 568px) {
+  .form-inline .form-control {
+    width: 81%;
+  }
 }
