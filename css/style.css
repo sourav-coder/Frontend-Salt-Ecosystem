@@ -7,9 +7,12 @@ body {
 p {
   margin: 0;
 }
+header{
+  background-color: #32aeb1;
+}
 .navbar {
   font-family: "Ubuntu", sans-serif;
-  width: 76%;
+  width: 77%;
   margin: auto;
   padding-top: 0;
 }
@@ -110,6 +113,9 @@ span i {
   background-color: #32aeb1;
   height: 60px;
 }
+.next-header .row{
+  width: 74%;margin: auto;
+}
 
 .next-header a {
   color: #fff;
@@ -120,7 +126,7 @@ span i {
 }
 
 .row .col-md-3 {
-  height: 46px;
+  /* height: 46px; */
   display: inline-block;
   padding: 5px 0 0;
 }
@@ -241,14 +247,14 @@ span i {
   }
 
   .user_li {
-    position: fixed;
+    position: absolute;
     top: 10px;
-    right: 130px;
+    right: 108px;
   }
   .login_icon {
-    position: fixed;
+    position: absolute;
     top: 9px;
-    right: 20px;
+    right: 3px;
   }
   .user_li i {
     font-size: 20px;
@@ -274,6 +280,8 @@ span i {
 
   .user_li .far {
     font-size: 16px;
+    position: absolute;
+    right: 7px;
   }
 }
 /* 
@@ -354,10 +362,8 @@ a:hover {
 
 .footer {
   padding: 3% 8%;
-  position: fixed;
   bottom: 0;
   background: #000000;
-  height: 336px;
   color: #ffff;
 }
 
@@ -368,6 +374,7 @@ a:hover {
 
 .footer form {
   margin-top: 14px;
+  position: relative;
 }
 .footer form input {
   padding: 8px 12px;
@@ -381,8 +388,7 @@ a:hover {
   border-radius: 0;
   background: #2bb3c0;
   color: #000;
-  display: inline-block;
-  position: fixed;
+  position: absolute;
 }
 .footer .btn i {
   font-size: 22px;
@@ -413,12 +419,10 @@ a:hover {
 }
 
 .footer .copy_right {
-  position: fixed;
-  bottom: 0;
-  width: 84%;
+  width: 96%;
   font-size: 20px;
   font-family: "Ubuntu";
-  padding: 12px 16px;
+  padding: 44px 16px;
   color: #3f3f44;
 }
 
@@ -426,6 +430,230 @@ a:hover {
   color: #fff;
 }
 
+
+/* 
+------------------------  product page-------------------------------------
+*/
+
+
+.productContainer{
+  text-align: left;
+}
+
+.carousel-control-next i,.carousel-control-prev i{
+  color: #333;
+}
+.productContainer .profile img{
+  width: 50px;
+}
+.productContainer .btn{
+  text-transform: uppercase;
+  padding: 12px 24px;
+}
+.productContainer .review_icons{
+  padding: 8px 15px;
+}
+.productContainer .review_icons i{
+  font-size: 21px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+.productContainer .review_icons .fa-cart-plus{
+  float: right;
+}
+
+.secondColumn{
+  text-align: center;
+  text-align: center;
+    padding: 6px 0;
+    margin-top: 42px;
+}
+.productTitle{
+  padding: 16px 0;
+}
+.list-group-item .btn{
+  background: #32aeb1;
+  color: #f1f1f1;
+}
+.list-group-item #colId{
+  margin-top: 10px;
+}
+
+
+
+.rating i{
+padding:8px 6px;
+color: gold;
+}
+.size select{
+  padding: 3px 11px;
+    margin-left: 20px;
+}
+.color select{
+  padding: 3px 11px ;
+  margin-left: 9px;
+}
+
+.rating ,.size,.color{
+  padding: 10px 0;
+}
+.col-md-2 .price{
+    /* border: 2px solid darkgray; */
+    margin-top: 36px;
+}
+.status ,.qty,.col-md-2 .price{
+  padding: 9px 7px;
+}
+.status p{
+  display: inline;
+    margin-left: 8px;
+}
+.qty select{
+  padding: 3px 11px;
+margin-left: 28px;
+}
+.col-md-2 .btn{
+  background: #32aeb1;
+  color: #fff;
+  padding: 12px 24px;
+}
+
+
+
+.productDetails{
+  text-align: left;
+}
+.productDetails ul{
+  list-style-type: none;
+  padding: 0;
+}
+.productDetails ul li{
+  padding: 6px 0;
+}
+hr{
+  width: 76%;
+    box-shadow: 0px 1px 3px 0px #3334;
+}
+
+
+/* 
+ --------- card --------------
+*/
+
+
+
+
+.cardTitle .card{
+  width: 11rem;
+border: 0;
+text-align: center;
+display: inline-block;
+color: #333;
+transition: all 0.5s ease-in-out 0s;
+}
+.cardTitle .card:hover{
+  transform: translateY(-20px);
+}
+
+
+
+.cardTitle .card img{
+  width: 174px;
+
+}
+/* .cardTitle .card img:hover{ */
+  /* transform: scale(1.2) rotateY(-5deg); */
+/* } */
+
+.cardTitle .card-body{
+  padding:12px 8px;
+}
+
+
+
+/* 
+
+------------- similar to items section -----------------------
+*/
+
+.relatedProducts ,.moreItems {
+  padding: 24px 0;
+  padding-bottom: 150px;
+}
+.relatedProducts h2,.moreItems  h2{
+  padding: 24px;
+}
+
+.relatedProducts .carousel-control-next,.relatedProducts .carousel-control-prev,.moreItems .carousel-control-next,
+.moreItems .carousel-control-prev{
+  background: #32aeb1;
+  width: 43px;
+  height: 60px;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.giveRating{
+  padding: 6% 15%;
+  background: #eee;
+}
+.giveRating h5{
+  padding: 12px;
+}
+
+/* #ratingForm input[type="checkbox"] { */
+  /* width: 1.3em; */
+  /* height: 1.3em; */
+  /* background-color:#fff; */
+  /* border-radius: 50%; */
+  /* vertical-align: middle; */
+  /* border: 1px solid #333; */
+  /* -webkit-appearance: none; */
+  /* margin-right: 22px; */
+  /* outline: none; */
+  /* cursor: pointer; */
+/* } */
+
+
+
+
+
+#ratingForm label{
+  font-size: 12px;
+    margin-right: 6px;
+}
+#ratingForm .labelDiv{
+  width: 98%;
+}
+
+.star {
+  visibility:hidden;
+  font-size:30px;
+  cursor:pointer;
+  margin-right: 28px;
+}
+.star:before {
+ content: "\2606";
+ position: absolute;
+ visibility:visible;
+}
+.star:checked:before {
+ content: "\2605";
+ position: absolute;
+ color: gold;
+}
+
+
+
+
+
+
+
+
+/* 
+----------------------------  media queries ------------------------
+
+*/
 @media (min-width: 768px) and (max-width: 1024px) {
   .footer {
     display: none;
@@ -446,6 +674,28 @@ a:hover {
   .form-inline .form-control {
     width: 471px;
   }
+  #ratingForm .labelDiv{
+    width: 95%;
+  }
+  
+  .relatedProducts .carousel,.moreItems .carousel{
+    overflow: scroll;
+  }
+  .relatedProducts .carousel::-webkit-scrollbar,.moreItems .carousel::-webkit-scrollbar{
+    display: none;
+  }
+
+  .relatedProducts .carousel-inner,.moreItems .carousel-inner{
+
+    float: left;
+    width: 1451px;
+    height: 232px;
+  }
+  .carousel-control-next,.carousel-control-prev{
+    display: none;
+  }
+
+
 }
 
 /* 
@@ -455,4 +705,51 @@ a:hover {
   .form-inline .form-control {
     width: 81%;
   }
+
+  .relatedProducts h2, .moreItems h2{
+    font-size: 21px;
+  }
+
+  .relatedProducts .carousel,.moreItems .carousel{
+    overflow: scroll;
+  }
+  .relatedProducts .carousel::-webkit-scrollbar,.moreItems .carousel::-webkit-scrollbar{
+    display: none;
+  }
+
+  .relatedProducts .carousel-inner,.moreItems .carousel-inner{
+
+    float: left;
+    width: 1451px;
+    height: 232px;
+  }
+  .relatedProducts .carousel-control-next, .relatedProducts .carousel-control-prev{
+    display: none;
+  }
+  .moreItems .carousel-control-next,.moreItems .carousel-control-prev{
+    display: none;
+  }
+
+  
+  #ratingForm .labelDiv{
+    width: 94%;
+  }
+  #ratingForm label{
+  margin-right: 3px;
+  }
+  .star{
+    margin-right: 22px;
+    font-size: 25px;
+  }
+
+  .relatedProducts {
+    padding-bottom: 28px;
+  }
+
+  
+  
+  
+  
+
+
 }
